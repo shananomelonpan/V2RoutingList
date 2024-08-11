@@ -1,0 +1,47 @@
+[
+  {
+    "outboundTag": "direct",
+    "domain": [
+      "domain:example.com",
+      "domain:example2.com"
+    ]
+  },
+  {
+      "type": "field",
+      "outboundTag": "block",
+      "port": 443,
+      "network": "udp"
+  },
+  {
+    "type": "field",
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all"
+    ]
+  },
+  {
+    "type": "field",
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:cn",
+      "geosite:geolocation-cn"
+    ]
+  },
+  {
+    "type": "field",
+    "outboundTag": "direct",
+    "ip": [
+      "223.5.5.5/32",
+      "119.29.29.29/32",
+      "180.76.76.76/32",
+      "114.114.114.114/32",
+      "geoip:private",
+      "geoip:cn"
+    ]
+  },
+  {
+    "type": "field",
+    "port": "0-65535",
+    "outboundTag": "proxy"
+  }
+]
