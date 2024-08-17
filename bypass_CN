@@ -2,14 +2,17 @@
   {
     "outboundTag": "direct",
     "domain": [
-      "domain:example.com",
-      "domain:example2.com"
+      "domain:steamstatic.com",
+      "domain:steamserver.net",
+      "domain:zzjiasuqi.com",
+      "domain:easydoc.net",
+      "domain:immersivetranslate.com"
     ]
   },
   {
       "type": "field",
       "outboundTag": "block",
-      "port": 443,
+      "port": "443",
       "network": "udp"
   },
   {
